@@ -4,7 +4,15 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
+    number_r = 0
+    copy_number = number
+    while True:
+        digit = number % 10
+        number = number // 10
+        number_r = number_r * 10 + digit
+        if number == 0:
+            break
+    return copy_number == number_r
 
 
 # Тестируем функцию

@@ -2,5 +2,8 @@
 # Формат входных данных: дано одно вещественное число number. Гарантируется, что number ≠ 0.
 # Формат выходных данных: Требуется вывести тип числа текстом
 
-number = float(input())  # Считываем вещественное число
-
+number = float(input("input number:"))  # Считываем вещественное число
+if number > 0:
+    print("positive number")
+else:
+    print("negative number")

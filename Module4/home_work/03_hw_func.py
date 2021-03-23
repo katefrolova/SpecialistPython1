@@ -4,10 +4,7 @@
 def distance(xa, ya, xb, yb):
     return ((xa - xb) ** 2 + (ya - yb) ** 2) ** 0.5
 
-def in_circle(x1, y1, x2, y2, r1, r2):
-    a = distance(x1, y1, x2, y2)
-    if a + r2 <= r1:
-        return("yes")
-    return("no")
+def in_circle(x1, y1, r1, x2, y2, r2):
+    return distance(x1, y1, x2, y2) <= abs(r1 - r2)
 
 print(in_circle(2, 0, 0, 0, 4, 1))
